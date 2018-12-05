@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_style"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimens_8dp"
+        android:paddingBottom="@dimen/dimens_8dp"
+        android:text="@string/user_name"
+        android:textSize="@dimen/dimens_28sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="@dimen/dimens_8dp"
+        android:paddingBottom="@dimen/dimens_8dp"
+        android:layout_marginLeft="@dimen/dimens_16dp"
+        android:layout_marginRight="@dimen/dimens_16dp"
+        android:text="@string/title_of_the_application"
+        android:textSize="@dimen/dimens_28sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/text_name"/>
+
+    <TextView
+        android:id="@+id/text_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="@dimen/dimens_8dp"
+        android:paddingBottom="@dimen/dimens_8dp"
+        android:layout_marginLeft="@dimen/dimens_16dp"
+        android:layout_marginRight="@dimen/dimens_16dp"
+        android:text="@string/agenda"
+        android:textSize="@dimen/dimens_22sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/text_title"/>
+
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/dimens_90dp"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/dimens_10dp"
+        android:horizontalSpacing="@dimen/dimens_10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:padding="@dimen/dimens_12dp"
+        android:listSelector="@drawable/selector"
+        android:layout_below="@id/text_agenda"/>
+
+</RelativeLayout>
